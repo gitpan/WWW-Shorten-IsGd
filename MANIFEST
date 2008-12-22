@@ -1,0 +1,11 @@
+Changes
+lib/WWW/Shorten/isgd.pm
+Makefile.PL
+MANIFEST
+META.yml
+README
+t/00_use.t
+t/01_shorten.t
+t/02_lengthen.t
+t/pod_coverage.t
+t/pod.t
