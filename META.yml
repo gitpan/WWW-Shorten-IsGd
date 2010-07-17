@@ -1,6 +1,6 @@
 ---
 name: WWW-Shorten-isgd
-version: 0.01
+version: 0.02
 author:
   - Brandon Gilmore <brandon@mg2.org>
 abstract: Perl interface to is.gd
@@ -14,5 +14,5 @@ build_requires:
 provides:
   WWW::Shorten::isgd:
     file: lib/WWW/Shorten/isgd.pm
-    version: 0.01
+    version: 0.02
 generated_by: vim

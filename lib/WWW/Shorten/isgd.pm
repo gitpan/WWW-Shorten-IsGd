@@ -28,7 +28,7 @@ use Carp;
 use base qw/WWW::Shorten::generic Exporter/;
 
 our @EXPORT  = qw/makeashorterlink makealongerlink/;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $ERROR   = undef;
 
 =head1 EXPORTS
