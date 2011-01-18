@@ -1,9 +1,0 @@
-Revision history for Perl extension WWW::Shorten::isgd.
-
-        0.02  Fri Jul 16 2010
-                - updated bundled test-case to work around
-                  upstream database inconsistency
-
-	0.01  Tue Mar 04 2008
-		- initial release
-

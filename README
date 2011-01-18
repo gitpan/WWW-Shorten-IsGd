@@ -1,33 +1,57 @@
-WWW::Shorten::isgd version 0.02
-===============================
+NAME
+    WWW::Shorten::IsGd - shorten (or lengthen) URLs with http://is.gd
 
-WWW::Shorten::isgd is a WWW::Shorten subclass offering access to
-the is.gd API.
+VERSION
+    version 0.001
 
-RESOURCES
+SYNOPSIS
+            use WWW::Shorten::IsGd;
+            use WWW::Shorten 'IsGd';
 
-Trac/SVN Site:
-   http://svn.mg2.org/projects/brandon/browser/WWW::Shorten::isgd
-   
-INSTALLATION
+        my $url = q{http://averylong.link/wow?thats=really&really=long};
+        my $short_url = makeashorterlink($url);
+        my $long_url  = makealongerlink($short_url); # eq $url
 
-To install this module type the following:
-   perl Makefile.PL
-   make
-   make test
-   make install
+DESCRIPTION
+    A Perl interface to the web site <http://is.gd>. is.gd simply maintains
+    a database of long URLs, each of which has a unique identifier.
 
-DEPENDENCIES
+Functions
+  makeashorterlink
+    The function "makeashorterlink" will call the is.gd web site passing it
+    your long URL and will return the shortened link.
 
-This module requires these other modules and libraries:
+  makealongerlink
+    The function "makealongerlink" does the reverse. "makealongerlink" will
+    accept as an argument either the full TinyURL URL or just the TinyURL
+    identifier.
 
-WWW::Shorten
+    If anything goes wrong, then either function will return "undef".
+
+AVAILABILITY
+    The latest version of this module is available from the Comprehensive
+    Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
+    CPAN site near you, or see
+    <http://search.cpan.org/dist/WWW-Shorten-IsGd/>.
+
+    The development version lives at
+    <http://github.com/doherty/WWW-Shorten-IsGd> and may be cloned from
+    <git://github.com/doherty/WWW-Shorten-IsGd.git>. Instead of sending
+    patches, please fork this project using the standard git and github
+    infrastructure.
+
+BUGS AND LIMITATIONS
+    No bugs have been reported.
+
+    Please report any bugs or feature requests through the web interface at
+    <http://github.com/doherty/WWW-Shorten-IsGd/issues>.
+
+AUTHOR
+    Mike Doherty <doherty@cpan.org>
 
 COPYRIGHT AND LICENSE
+    This software is copyright (c) 2011 by Mike Doherty.
 
-Copyright (C) 2008 Brandon Gilmore <brandon@mg2.org>
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.8 or,
-at your option, any later version of Perl 5 you may have available.
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
