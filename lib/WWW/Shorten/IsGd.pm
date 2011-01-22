@@ -4,7 +4,7 @@ use 5.006;
 
 package WWW::Shorten::IsGd;
 BEGIN {
-  $WWW::Shorten::IsGd::VERSION = '0.001';
+  $WWW::Shorten::IsGd::VERSION = '0.002';
 }
 # ABSTRACT: shorten (or lengthen) URLs with http://is.gd
 
@@ -58,7 +58,7 @@ WWW::Shorten::IsGd - shorten (or lengthen) URLs with http://is.gd
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -74,7 +74,7 @@ version 0.001
 A Perl interface to the web site L<http://is.gd>. is.gd simply maintains
 a database of long URLs, each of which has a unique identifier.
 
-=head1 Functions
+=head1 FUNCTIONS
 
 =head2 makeashorterlink
 
