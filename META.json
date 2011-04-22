@@ -1,0 +1,53 @@
+{
+   "abstract" : "shorten (or lengthen) URLs with http://is.gd",
+   "author" : [
+      "Mike Doherty <doherty@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WWW-Shorten-IsGd",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "Exporter" : 0,
+            "URI" : 0,
+            "WWW::Shorten::generic" : 0,
+            "perl" : "5.008"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/doherty/WWW-Shorten-IsGd/issues"
+      },
+      "homepage" : "http://p3rl.org/WWW::Shorten::IsGd",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/doherty/WWW-Shorten-IsGd.git",
+         "web" : "https://github.com/doherty/WWW-Shorten-IsGd"
+      }
+   },
+   "version" : "0.003"
+}
+

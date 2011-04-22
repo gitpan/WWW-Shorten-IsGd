@@ -1,12 +1,9 @@
+package WWW::Shorten::IsGd;
+# ABSTRACT: shorten (or lengthen) URLs with http://is.gd
 use strict;
 use warnings;
 use 5.006;
-
-package WWW::Shorten::IsGd;
-BEGIN {
-  $WWW::Shorten::IsGd::VERSION = '0.002';
-}
-# ABSTRACT: shorten (or lengthen) URLs with http://is.gd
+our $VERSION = '0.003'; # VERSION
 
 
 use base qw( WWW::Shorten::generic Exporter );
@@ -58,7 +55,7 @@ WWW::Shorten::IsGd - shorten (or lengthen) URLs with http://is.gd
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -91,6 +88,8 @@ If anything goes wrong, then either function will return C<undef>.
 
 =head1 AVAILABILITY
 
+The project homepage is L<http://p3rl.org/WWW::Shorten::IsGd>.
+
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/WWW-Shorten-IsGd/>.
@@ -100,12 +99,17 @@ and may be cloned from L<git://github.com/doherty/WWW-Shorten-IsGd.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/doherty/WWW-Shorten-IsGd>
+and may be cloned from L<git://github.com/doherty/WWW-Shorten-IsGd.git>
+
 =head1 BUGS AND LIMITATIONS
 
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://github.com/doherty/WWW-Shorten-IsGd/issues>.
+L<https://github.com/doherty/WWW-Shorten-IsGd/issues>.
 
 =head1 AUTHOR
 
